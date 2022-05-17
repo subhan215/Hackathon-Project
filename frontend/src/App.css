@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Login Layout */
+
+/* header layout */
+.authHead {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+
+}
+
+.authHeaddiv1 {
+  width: 200px;
+}
+.authHeaddiv1h1{
+margin-top: 0;
+}
+.authHeaddiv2 {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.searchDiv {
+  width: 200px;
+  padding: 8px;
+  background-color: aqua;
+}
+
+.searchIcon {
+  width: 30px;
+  background-color: gray;
+  padding: 8px;
+}
+
+.authHeaddiv3 {
+  display: flex;
+  justify-content: space-between;
+  width: 120px;
+}
+
+/* main layout */
+.authMain{
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+ margin-top: 170px;
+ padding: 20px;
+ border-radius: 10px;
+ border: 2px solid black;
+}
+.authmainh1{
+  text-align: center;
+  background: whitesmoke;
+}
+.authMain input{
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  background: whitesmoke !important;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-bottom: 2px solid purple;
+}
+.authMain input:focus{
+  outline: none ;
+}
+.passdiv{
+  background: whitesmoke !important;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  margin: 0 auto;
+}
+.eyebtn{
+  background: whitesmoke ;
+  border: none;
+  width: 40px;
+}
+
+.mybtn{
+  color: grey;
+  margin: 10px auto 0 auto;
+  background: aqua !important;
+  color: whitesmoke;
+  width: 250px;
+  padding: 10px;
+  font-size: 15px;
+
+}
+.signupbtn{
+  background: royalblue !important;
+}
+.authMain p{
+  font-size: 13px;
+ padding: 0 20px;
+  margin: 10px 0 10px 10px;
+  background: whitesmoke;
+  font-weight: bold;
+}
