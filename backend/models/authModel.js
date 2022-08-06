@@ -6,11 +6,22 @@ const authSignupSchema = mongoose.Schema({
     } , 
     password : {
         type : String
-    } /* , 
-    posts : {
-        type : Array ,
-        
-    } */
+    }  , 
+    name : {
+        type : String
+
+    } ,
+    phoneNo : {
+        type : String
+
+    } , 
+    userImage : {
+        type : String
+    } ,
+     role : {
+        type : String
+    } 
+   
 })
 
 const authModel = mongoose.model( "authData", authSignupSchema)

@@ -2,6 +2,9 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Benne', serif;
+/* font-family: 'Caveat', cursive;
+font-family: 'Satisfy', cursive; */
 }
 
 body {
@@ -11,110 +14,870 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
+  font-family: 'Caveat', cursive;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Satisfy', cursive;
+border-color: black;
+}
+
+.dark {
+  background: black !important;
+  color: white !important;
+}
+a:hover{
+  color: rgb(28, 58, 147) !important;
+  cursor: pointer;
 }
 
 /* Login Layout */
 
 /* header layout */
 .authHead {
-  height: 7vh;
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid black;
+  justify-content: center;
 
 }
 
-.authHeaddiv1 {
-  width: 200px;
-}
-.authHeaddiv1h1{
-margin-top: 0;
-}
-.authHeaddiv2 {
-  width: 300px;
-  display: flex;
-  align-items: center;
-  
-}
 
-.searchDiv {
-  width: 200px;
-  padding: 8px;
-  background-color: aqua;
-}
 
-.searchIcon {
-  width: 30px;
-  background-color: gray;
-  padding: 8px;
-}
 
-.authHeaddiv3 {
-  display: flex;
-  justify-content: space-between;
-  width: 120px;
-}
 
 /* main layout */
-.authMain{
-  width: 300px;
-  margin: 0 auto;
+.authMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 550px;
+  padding: 50px;
+  
+
+}
+
+.authContent {
+  width: 285px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
- margin-top: 170px;
- padding: 20px;
- border-radius: 10px;
- border: 2px solid black;
+ 
+
 }
-.authmainh1{
+
+.welcomebackpic {
+  background: url("/Images/Welcome\ Back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 550px;
+}
+
+.authmainh1 {
   text-align: center;
-  background: whitesmoke;
+  font-size: 40px;
+  margin: 0;
 }
-.authMain input{
+
+
+
+.rolesdiv {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.rolesdivp input {
+  margin: 0 !important;
+}
+
+.rolesdivp {
+  width: 90px;
+
+  display: flex;
+  align-items: center;
+}
+
+.authMain input {
   display: block;
-  margin-top: 10px;
-  font-size: 14px;
-  background: whitesmoke !important;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
   width: 250px;
   margin-left: auto;
   margin-right: auto;
   border: none;
-  border-bottom: 2px solid purple;
+  border-bottom: 1px solid rgb(28, 58, 147);
 }
-.authMain input:focus{
-  outline: none ;
+
+.authMain input:focus {
+  outline: none;
 }
-.passdiv{
-  background: whitesmoke !important;
+
+.passdiv {
   display: flex;
   align-items: center;
   width: 250px;
   margin: 0 auto;
 }
-.eyebtn{
-  background: whitesmoke ;
+
+.eyebtn {
   border: none;
   width: 40px;
+  margin-top: 4px;
+  background: #FFFFFF;
 }
 
-.mybtn{
+.mybtn {
   color: grey;
   margin: 10px auto 0 auto;
-  background: aqua !important;
-  color: whitesmoke;
+  background: rgb(28, 58, 147) !important;
   width: 250px;
   padding: 10px;
   font-size: 15px;
 
 }
-.signupbtn{
-  background: royalblue !important;
+
+
+
+.authMain p {
+  font-size: 16px;
+  margin: 10px 0 10px 0;
+  font-weight: bold; 
+  text-align: center;
 }
-.authMain p{
-  font-size: 13px;
- padding: 0 20px;
-  margin: 10px 0 10px 10px;
-  background: whitesmoke;
+.authMain p a{
+  font-weight: lighter;
+}
+.authMain p a:hover{
   font-weight: bold;
+}
+@media only screen and (max-width : 870px) {
+  .authMain {
+    padding: 0;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width : 780px) {
+  .welcomebackpic {
+    display: none;
+  }
+}
+
+/* Home Screen */
+.homeScreenHeader{
+  display: flex;
+  align-items: center;
+  width : 100% ; 
+  justify-content: space-between;
+  padding-right: 30px;
+  border-bottom: 1px solid rgb(28, 58, 147);
+}
+.homeScreenHeader div{
+  display : flex ; 
+  justify-content: space-between;
+
+}
+.homeScreenHeader div a{
+  cursor: pointer;
+  color : black 
+}
+
+.homeScreenHeader div a:hover{
+  color: rgb(28, 58, 147) !important;
+}
+.homeScreenHeader nav{
+  flex: 1;
+  text-align: right;
+
+}
+.homeScreenHeader nav ul{
+  display: inline-block;
+  list-style-type: none;
+
+}
+.homeScreenHeader nav ul li{
+  display: inline-block;
+  margin-left: 40px;
+  
+}
+.menu-icon{
+  width: 35px;
+    margin-left: 25px;
+    display: none;
+}
+.homeScreenHead{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.hotelsDiv {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+}
+
+.postDiv {
+  border-bottom: 1px solid rgb(28, 58, 147);
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.postDivp1 {
+  width: 300px;
+  min-width: 300px;
+}
+
+.postDiv .hotelName {
+  margin: 10px 0 10px 0;
+ width: 250px;
+  color : rgb(28, 58, 147)
+}
+.hotelName h3{
+  text-align: center;
+}
+
+.postImgDiv{
+  width: 250px;
+}
+
+.priceDiv {
+  width: 100%;
+  display: flex;
+}
+
+.postDiv section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.hotelInfoSec {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.hotelInfoSec span{
+  color : rgb(28, 58, 147)
+}
+.priceDiv p{
+    margin: 5px auto 0 auto;
+
+}
+.postDiv section p {
+  margin-bottom: 0px;
+  margin: 5px auto 0 auto;
+font-size: 18px;
+
+}
+
+.bookNowbbtnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.bookNowbtn {
+  width: 100px;
+  border-radius: 5px;
+
+}
+.bookNowbtn:hover{
+  color: rgb(28, 58, 147);
+}
+.postlistDiv{
+  list-style-type: none;
+  text-align: center;
+
+}
+
+
+
+
+.bookPersonInfo input {
+  border: none;
+  border-bottom: 1px solid rgb(28, 58, 147);
+  outline: none;
+  padding: 0;
+}
+.bookPersonInfo , .hotelRoomSelectDiv , .userDetailsShow , .paymentDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paymentDiv input{
+  border: none;
+  margin-top: 10px;
+  border-bottom : 1px solid rgb(28, 58, 147) ; 
+  padding : 0
+}
+
+
+.paymentOptions {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+
+}
+
+.paymentOptions input {
+  margin-top: 0 !important;
+}
+
+.paymentOptions div {
+  width: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookSubmitbtn {
+  margin-top: 15px;
+}
+.payment
+.paymentDiv input {
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(28, 58, 147);
+  outline: none;
+  padding: 0;
+}
+
+.paymentDiv p {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.servicesFilterDiv{
+  display: flex;
+  align-items: center;
+  width: 350px;
+  justify-content: space-between;
+}
+.servicesFilterDiv p{
+  margin: 0;
+  font-size: 18px;
+}
+.rmsc .dropdown-heading  {
+  width: 200px !important;
+  padding: 2px !important;
+  height: 30px !important;
+  border: 1px solid rgb(28, 58, 147);
+  border-radius: 5px;
+  font-size: 18px;
+}
+.rmsc{
+  --rmsc-main : rgb(28, 58, 147) !important
+}
+
+.filterByDropDown{
+  display : flex ; 
+  width : 260px ;
+  justify-content : space-between ; 
+  
+}
+.filterByDropDown label{
+  font-size: 18px
+}
+.filterByDropDown select{
+  border: none !important ; 
+  appearance: none;
+}
+.filterByDropDown select:focus{
+  outline:  none ;
+
+}
+.filterByDropDown select {
+ padding-bottom: 5px !important;
+ padding-left: 13px;
+}
+.filterByDropDown div{
+  width: 185px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width : 645px) {
+   .homeScreenHead{
+    flex-direction: column;
+    justify-content: flex-start;
+   }
+   .homeScreenHead div{
+    margin-top: 5px;
+   }
+   .filterByDropDown , .servicesFilterDiv{
+    align-items: center !important;
+   }
+   .servicesFilterDiv .dropdown-container , .servicesFilterDiv .dropdown-heading , .servicesFilterDiv .dropdown-heading-value{
+          margin-top: 0;
+  }
+  .homeScreenHeader nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: black;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 1s;
+    text-align: center;
+    z-index: 999;
+    color: #FFFFFF;
+    padding-left : 0;
+    
+}
+.homeScreenHeader nav ul li{
+    display: block;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.menu-icon{
+    display: block;
+    cursor: pointer;
+
+} 
+}
+@media only screen and (max-width : 370px) {
+  .filterByDropDown , .servicesFilterDiv{
+      flex-direction: column;    
+  }
+}
+
+@media only screen and (max-width : 750px) {
+  .hotelsDiv{
+    margin: 0;
+    margin-top: 20px;
+  }
+  .postDiv {
+    flex-direction: column;
+  }
+
+  .postDivp1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .bookNowbbtnDiv {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width : 460px) {
+  .hotelInfoSec {
+
+    flex-direction: column;
+  }
+
+}
+@media only screen and (max-width : 345px) {
+  .bookPersonInfo p {
+    font-size: 14px;
+  }
+  .postImgDiv ,  .hotelName{
+    width: 200px;
+    
+  }
+  
+  .hotelsDiv{
+    margin: 0;
+  }
+
+}
+
+@media only screen and (max-width : 310px) {
+  .bookPersonInfo p {
+    font-size: 12px;
+  }
+
+}
+
+@media only screen and (max-width : 280px) {
+  .bookPersonInfo p {
+    font-size: 11px;
+  }
+  .postImgDiv{
+    margin-right: 20px;
+  }
+}
+  @media only screen and (max-width : 265px) {
+    
+    .postImgDiv{
+      margin-right: 40px;
+    }
+
+}
+@media only screen and (max-width : 265px) {
+    
+  .postImgDiv{
+    margin-right: 40px;
+    padding-right: 10px;
+  }
+
+}
+@media only screen and (max-width : 260px) {
+    
+  .hotelInfoSec p{
+     margin-left: 40px !important;
+  }
+  .postDiv h4{
+    padding-right: 70px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width : 250px) {
+    
+  .postImgDiv{
+    margin-right: 40px;
+    padding-right: 20px;
+  }
+
+}
+/* User Screen */
+
+
+
+.bookingsHeadDiv p,
+.bookingsHeadDiv h3 {
+  margin-bottom: 0;
+}
+
+
+
+.profScreenNav {
+ 
+  position: absolute;
+   top: 30px; 
+  left: auto;
+  right: 0.01%;  
+  z-index: 99;
+  background-color: black;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.profScreenNav ul {
+  display: inline-block;
+  list-style-type: none;
+  cursor: pointer;
+
+  
+ height: 200px;
+  
+  }
+
+ .profScreenNav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+
+}
+.profScreenNav ul li p:hover , .profScreenNav ul li button:hover{
+   color:rgb(28, 58, 147) ; 
+}
+
+.bookingsTable {
+  border: 1px solid rgb(28, 58, 147);
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+}
+
+.bookingsTable tr {
+  border-bottom: 1px solid rgb(28, 58, 147);
+
+}
+
+.bookingsTable td {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-right: 1px solid rgb(28, 58, 147);
+
+
+}
+.updBookDiv input{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(28, 58, 147);
+  margin-left: 20px;
+}
+.updBookDiv div{
+  display: flex;
+  align-items: center;
+ 
+}
+.updBookDiv div p{
+  margin: 0;
+}
+@media only screen and (max-width : 1260px) {
+  .bookingsTable td {
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+}
+
+@media only screen and (max-width : 1170px) {
+  .bookingsTable td {
+    padding-left: 10px;
+    padding-right: 10px;
+
+  }
+}
+
+@media only screen and (max-width : 1090px) {
+  .bookingsTable td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media only screen and (max-width : 877px) {
+  .bookingsTable td {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width : 780px) {
+  .bookingsTable td {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width : 690px) {
+  .bookingsTable td {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width : 440px) {
+  .bookingsTable td {
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width : 370px) {
+  .bookingsTable td {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width : 330px) {
+  .bookingsTable td {
+    font-size: 6px;
+  }
+}
+@media only screen and (max-width : 300px) {
+  .bookingsTable td {
+    font-size: 5px;
+  }
+}
+
+/* Restaurant Panel Screen  */
+.postDivR{
+  display: block;
+}
+.iconsDiv{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.postIconR{
+  margin-right: 20px;
+}
+.postContentR{
+  display: flex;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width : 750px) {
+  .postContentR {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/*   Personal Info Screen   */
+
+.updProfDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.updProfDiv button{
+  padding: 5px;
+  border-radius: 5px;
+}
+.changesDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.changesDiv input{
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid rgb(28, 58, 147);
+  outline: none;
+  padding: 0;
+}
+.chngInfBtn{
+  margin-top: 20px;
+  width: 250px;
+}
+.chngPassDiv div{
+  margin-bottom: 20px;
+}
+
+/*  Restaurant Panel Screen  */
+.addHotelInput{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.addHotelInput div{
+  margin-bottom: 10px;
+  width: 250px;
+}
+.addHotelInput input{
+  border: none;
+  border-bottom: 1px solid rgb(28, 58, 147);
+  outline: none;
+  padding: 0;
+}
+.crtPostImg{
+  display: flex;
+  justify-content: center;
+}
+.myModalh4 div{
+ 
+  display: flex;
+  justify-content: center;
+  
+}
+.profileHeadDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 10px;
+  margin-top: 10px;
+ 
+}
+.detailsShowDiv{
+  margin-left: 20px;
+}
+.hotelDetHead{
+  display: flex;
+  align-items: center;
+  width: 400px;
+  justify-content: space-between;
+}
+.hotelDetHead h3{
+  margin-bottom: 0;
+}
+.hotelDetHead button{
+  border-radius: 8px;
+
+}
+.postBtn{
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.hotelPicDiv{
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+.postDivR{
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid rgb(28, 58, 147);
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.updateDetMod{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+
+}
+.updateDetMod div input{
+display: inline-block;
+border: none;
+border-bottom: 1px solid rgb(28, 58, 147);
+
+}
+
+.updBtn{
+  display: block;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.hotelDetailsDivR{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+.updateDetMod p{
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.updimgP{
+  margin-right: 30px;
+}
+.imgInput{
+  margin-top: 10px;
+  margin-left: 70px;
+}
+.updHotelImg{
+  margin-top: 10px;
+}
+@media only screen and (max-width : 560px){
+  .hotelDetHead{
+    width: 300px;
+  }
+}
+@media only screen and (max-width : 370px){
+  .hotelDetHead h3{
+    font-size: 20px;
+  }
+  .hotelDetHead{
+    width: 250px;
+  }
+  .detailsShowDiv h5{
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width : 320px){
+  .hotelDetHead h3{
+    font-size: 16px;
+  }
+  .hotelDetHead{
+    width: 200px;
+    justify-content: space-around;
+  }
+  .detailsShowDiv h5{
+    font-size: 14px;
+  }
+  .hotelDetHead button{
+    font-size: 12px;
+  }
+  .profileHeadDiv{
+    padding-right: 10px;
+  }
+
 }

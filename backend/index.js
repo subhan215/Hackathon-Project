@@ -2,15 +2,18 @@ const mongoose = require("mongoose") ;
 const mainRouter = require("./routers/index")
 const express = require("express") ; 
 const app = express() ; 
-const PORT = 5000 ; 
-const cors = require("cors")
-const urlParser = express.json() ; 
+const cors = require("cors");
+const urlParser = express.json({limit: '50mb'}) ; 
 app.use(cors())
-
+require("dotenv").config()
 app.use(urlParser) ; 
-app.use(mainRouter) ; 
+app.use(mainRouter) 
+app.use(express.urlencoded({limit: '50mb'}));
+app.get("/" , (req , res) => {
+    res.send("hello world")
+})
 
-mongoose.connect("mongodb+srv://subhan12:security12@cluster0.ts1ff.mongodb.net/?retryWrites=true&w=majority" , {
+mongoose.connect(`${process.env.MONGODB_CLUSTER_LINK}` , {
     useNewUrlParser : true , 
     useUnifiedTopology : true 
 }) 
@@ -20,6 +23,6 @@ mongoose.connection.on("connected" , () => {
 mongoose.connection.on("error" , (err) => {
     console.log("error" , err)
 })
-app.listen(PORT,()=>{
-    console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(process.env.PORT,()=>{
+    console.log(`Server is running on http://localhost:${process.env.PORT}`);
 })
